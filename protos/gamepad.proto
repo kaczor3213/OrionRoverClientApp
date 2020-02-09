@@ -1,0 +1,76 @@
+syntax = "proto3";
+
+option objc_class_prefix = "ORION";
+
+package grpc_client;
+
+service GamepadEvents {
+    rpc InitService(msg_creq_StartConnection) returns (msg_sres_StartConnection) {}
+    rpc ButtonEvent(msg_creq_ButtonEventTransfer) returns (Bmsg_sres_ButtonEventTransfer) {}
+    rpc TransmitLS(stream LeftStick) returns (stream LeftStickFeedback) {}
+    rpc TransmitRS(stream RightStick) returns (stream RightStickFeedback) {}
+    rpc TransmitLT(stream LeftTrigger) returns (stream LeftTriggerFeedback) {}
+    rpc TransmitRT(stream RightTrigger) returns (stream RightTriggerFeedback) {}
+}
+
+message msg_creq_StartConnection {
+    string content = 1;
+}
+
+message msg_sres_StartConnection {
+    string content = 1;
+}
+
+message msg_creq_ButtonEventTransfer {
+    string btn_name = 1;
+    string btn_event_type = 2;
+}
+
+message msg_sres_ButtonEventTransfer {
+    string btn_name = 1;
+    string btn_event_type = 2;
+}
+
+// Left stick analog
+message str_creq_LeftStickTransfer {
+    int32 x_offset = 1;
+    int32 y_offset = 2;
+}
+
+message str_sres_LeftStickTransfer {
+    string response = 1;
+    int32 x_offset_received = 2;
+    int32 y_offset_received = 3;
+}
+
+// Right stick analog
+message str_creq_RightStick {
+    int32 x_offset = 1;
+    int32 y_offset = 2;
+}
+
+message str_sres_RightStickFeedback {
+    string response = 1;
+    int32 x_offset_received = 2;
+    int32 y_offset_received = 3;
+}
+
+// Left trigger analog
+message str_creq_LeftTrigger {
+    int32 z_offset = 1;
+}
+
+message str_sres_LeftTriggerFeedback {
+    string response = 1;
+    int32 z_offset_received = 2;
+}
+
+// Right trigger analog
+message str_creq_RightTrigger {
+    int32 z_offset = 1;
+}
+
+message str_sres_RightTriggerFeedback {
+    string response = 1;
+    int32 z_offset_received = 2;
+}
