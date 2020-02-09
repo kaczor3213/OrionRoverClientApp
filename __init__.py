@@ -11,4 +11,12 @@ def run_server():
     
 if __name__ == "__main__":
     logging.basicConfig()
+    q = Queue()
     
+    server_process = Process(target=run_server)
+    server_process.start()
+    
+    client_process = Process(target=run_client)
+    client_process.start()
+    
+    print(q.get())

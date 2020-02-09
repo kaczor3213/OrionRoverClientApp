@@ -17,22 +17,22 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='gamepad.proto',
   package='grpc_client',
   syntax='proto3',
-  serialized_options=b'\242\002\005ORION',
-  serialized_pb=b'\n\rgamepad.proto\x12\x0bgrpc_client\"\"\n\tCallRover\x12\x15\n\rhello_message\x18\x01 \x01(\t\"\'\n\rRoverFeedback\x12\x16\n\x0ehello_response\x18\x01 \x01(\t\"\x1a\n\x06\x42utton\x12\x10\n\x08\x62tn_name\x18\x01 \x01(\t\"+\n\x0e\x42uttonFeedback\x12\x19\n\x11\x62tn_name_received\x18\x01 \x01(\t\"/\n\tLeftStick\x12\x10\n\x08x_offset\x18\x01 \x01(\x05\x12\x10\n\x08y_offset\x18\x02 \x01(\x05\"[\n\x11LeftStickFeedback\x12\x10\n\x08response\x18\x01 \x01(\t\x12\x19\n\x11x_offset_received\x18\x02 \x01(\x05\x12\x19\n\x11y_offset_received\x18\x03 \x01(\x05\"0\n\nRightStick\x12\x10\n\x08x_offset\x18\x01 \x01(\x05\x12\x10\n\x08y_offset\x18\x02 \x01(\x05\"\\\n\x12RightStickFeedback\x12\x10\n\x08response\x18\x01 \x01(\t\x12\x19\n\x11x_offset_received\x18\x02 \x01(\x05\x12\x19\n\x11y_offset_received\x18\x03 \x01(\x05\"\x1f\n\x0bLeftTrigger\x12\x10\n\x08z_offset\x18\x01 \x01(\x05\"B\n\x13LeftTriggerFeedback\x12\x10\n\x08response\x18\x01 \x01(\t\x12\x19\n\x11z_offset_received\x18\x02 \x01(\x05\" \n\x0cRightTrigger\x12\x10\n\x08z_offset\x18\x01 \x01(\x05\"C\n\x14RightTriggerFeedback\x12\x10\n\x08response\x18\x01 \x01(\t\x12\x19\n\x11z_offset_received\x18\x02 \x01(\x05\x32\xd3\x03\n\rGamepadEvents\x12\x43\n\x0bInitService\x12\x16.grpc_client.CallRover\x1a\x1a.grpc_client.RoverFeedback\"\x00\x12\x41\n\x0b\x42uttonEvent\x12\x13.grpc_client.Button\x1a\x1b.grpc_client.ButtonFeedback\"\x00\x12J\n\nTransmitLS\x12\x16.grpc_client.LeftStick\x1a\x1e.grpc_client.LeftStickFeedback\"\x00(\x01\x30\x01\x12L\n\nTransmitRS\x12\x17.grpc_client.RightStick\x1a\x1f.grpc_client.RightStickFeedback\"\x00(\x01\x30\x01\x12N\n\nTransmitLT\x12\x18.grpc_client.LeftTrigger\x1a .grpc_client.LeftTriggerFeedback\"\x00(\x01\x30\x01\x12P\n\nTransmitRT\x12\x19.grpc_client.RightTrigger\x1a!.grpc_client.RightTriggerFeedback\"\x00(\x01\x30\x01\x42\x08\xa2\x02\x05ORIONb\x06proto3'
+  serialized_options=None,
+  serialized_pb=b'\n\rgamepad.proto\x12\x0bgrpc_client\"+\n\x18msg_creq_StartConnection\x12\x0f\n\x07\x63ontent\x18\x01 \x01(\t\"+\n\x18msg_sres_StartConnection\x12\x0f\n\x07\x63ontent\x18\x01 \x01(\t\"\x1b\n\x08msg_Ping\x12\x0f\n\x07\x63ontent\x18\x01 \x01(\t\"H\n\x1cmsg_creq_ButtonEventTransfer\x12\x10\n\x08\x62tn_name\x18\x01 \x01(\t\x12\x16\n\x0e\x62tn_event_type\x18\x02 \x01(\t\"H\n\x1cmsg_sres_ButtonEventTransfer\x12\x10\n\x08\x62tn_name\x18\x01 \x01(\t\x12\x16\n\x0e\x62tn_event_type\x18\x02 \x01(\t\"@\n\x1astr_creq_LeftStickTransfer\x12\x10\n\x08x_offset\x18\x01 \x01(\x05\x12\x10\n\x08y_offset\x18\x02 \x01(\x05\"d\n\x1astr_sres_LeftStickTransfer\x12\x10\n\x08response\x18\x01 \x01(\t\x12\x19\n\x11x_offset_received\x18\x02 \x01(\x05\x12\x19\n\x11y_offset_received\x18\x03 \x01(\x05\"A\n\x1bstr_creq_RightStickTransfer\x12\x10\n\x08x_offset\x18\x01 \x01(\x05\x12\x10\n\x08y_offset\x18\x02 \x01(\x05\"e\n\x1bstr_sres_RightStickTransfer\x12\x10\n\x08response\x18\x01 \x01(\t\x12\x19\n\x11x_offset_received\x18\x02 \x01(\x05\x12\x19\n\x11y_offset_received\x18\x03 \x01(\x05\"0\n\x1cstr_creq_LeftTriggerTransfer\x12\x10\n\x08z_offset\x18\x01 \x01(\x05\"K\n\x1cstr_sres_LeftTriggerTransfer\x12\x10\n\x08response\x18\x01 \x01(\t\x12\x19\n\x11z_offset_received\x18\x02 \x01(\x05\"1\n\x1dstr_creq_RightTriggerTransfer\x12\x10\n\x08z_offset\x18\x01 \x01(\x05\"L\n\x1dstr_sres_RightTriggerTransfer\x12\x10\n\x08response\x18\x01 \x01(\t\x12\x19\n\x11z_offset_received\x18\x02 \x01(\x05\x32\xb5\x05\n\x07Gamepad\x12]\n\x0bInitService\x12%.grpc_client.msg_creq_StartConnection\x1a%.grpc_client.msg_sres_StartConnection\"\x00\x12@\n\x0eTestConnection\x12\x15.grpc_client.msg_Ping\x1a\x15.grpc_client.msg_Ping\"\x00\x12\x65\n\x0b\x42uttonEvent\x12).grpc_client.msg_creq_ButtonEventTransfer\x1a).grpc_client.msg_sres_ButtonEventTransfer\"\x00\x12\x64\n\nTransmitLS\x12\'.grpc_client.str_creq_LeftStickTransfer\x1a\'.grpc_client.str_sres_LeftStickTransfer\"\x00(\x01\x30\x01\x12\x66\n\nTransmitRS\x12(.grpc_client.str_creq_RightStickTransfer\x1a(.grpc_client.str_sres_RightStickTransfer\"\x00(\x01\x30\x01\x12h\n\nTransmitLT\x12).grpc_client.str_creq_LeftTriggerTransfer\x1a).grpc_client.str_sres_LeftTriggerTransfer\"\x00(\x01\x30\x01\x12j\n\nTransmitRT\x12*.grpc_client.str_creq_RightTriggerTransfer\x1a*.grpc_client.str_sres_RightTriggerTransfer\"\x00(\x01\x30\x01\x62\x06proto3'
 )
 
 
 
 
-_CALLROVER = _descriptor.Descriptor(
-  name='CallRover',
-  full_name='grpc_client.CallRover',
+_MSG_CREQ_STARTCONNECTION = _descriptor.Descriptor(
+  name='msg_creq_StartConnection',
+  full_name='grpc_client.msg_creq_StartConnection',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='hello_message', full_name='grpc_client.CallRover.hello_message', index=0,
+      name='content', full_name='grpc_client.msg_creq_StartConnection.content', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -51,19 +51,19 @@ _CALLROVER = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=30,
-  serialized_end=64,
+  serialized_end=73,
 )
 
 
-_ROVERFEEDBACK = _descriptor.Descriptor(
-  name='RoverFeedback',
-  full_name='grpc_client.RoverFeedback',
+_MSG_SRES_STARTCONNECTION = _descriptor.Descriptor(
+  name='msg_sres_StartConnection',
+  full_name='grpc_client.msg_sres_StartConnection',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='hello_response', full_name='grpc_client.RoverFeedback.hello_response', index=0,
+      name='content', full_name='grpc_client.msg_sres_StartConnection.content', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -81,20 +81,20 @@ _ROVERFEEDBACK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=66,
-  serialized_end=105,
+  serialized_start=75,
+  serialized_end=118,
 )
 
 
-_BUTTON = _descriptor.Descriptor(
-  name='Button',
-  full_name='grpc_client.Button',
+_MSG_PING = _descriptor.Descriptor(
+  name='msg_Ping',
+  full_name='grpc_client.msg_Ping',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='btn_name', full_name='grpc_client.Button.btn_name', index=0,
+      name='content', full_name='grpc_client.msg_Ping.content', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -112,21 +112,28 @@ _BUTTON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=107,
-  serialized_end=133,
+  serialized_start=120,
+  serialized_end=147,
 )
 
 
-_BUTTONFEEDBACK = _descriptor.Descriptor(
-  name='ButtonFeedback',
-  full_name='grpc_client.ButtonFeedback',
+_MSG_CREQ_BUTTONEVENTTRANSFER = _descriptor.Descriptor(
+  name='msg_creq_ButtonEventTransfer',
+  full_name='grpc_client.msg_creq_ButtonEventTransfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='btn_name_received', full_name='grpc_client.ButtonFeedback.btn_name_received', index=0,
+      name='btn_name', full_name='grpc_client.msg_creq_ButtonEventTransfer.btn_name', index=0,
       number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='btn_event_type', full_name='grpc_client.msg_creq_ButtonEventTransfer.btn_event_type', index=1,
+      number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -143,27 +150,65 @@ _BUTTONFEEDBACK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=135,
-  serialized_end=178,
+  serialized_start=149,
+  serialized_end=221,
 )
 
 
-_LEFTSTICK = _descriptor.Descriptor(
-  name='LeftStick',
-  full_name='grpc_client.LeftStick',
+_MSG_SRES_BUTTONEVENTTRANSFER = _descriptor.Descriptor(
+  name='msg_sres_ButtonEventTransfer',
+  full_name='grpc_client.msg_sres_ButtonEventTransfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x_offset', full_name='grpc_client.LeftStick.x_offset', index=0,
+      name='btn_name', full_name='grpc_client.msg_sres_ButtonEventTransfer.btn_name', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='btn_event_type', full_name='grpc_client.msg_sres_ButtonEventTransfer.btn_event_type', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=223,
+  serialized_end=295,
+)
+
+
+_STR_CREQ_LEFTSTICKTRANSFER = _descriptor.Descriptor(
+  name='str_creq_LeftStickTransfer',
+  full_name='grpc_client.str_creq_LeftStickTransfer',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='x_offset', full_name='grpc_client.str_creq_LeftStickTransfer.x_offset', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='y_offset', full_name='grpc_client.LeftStick.y_offset', index=1,
+      name='y_offset', full_name='grpc_client.str_creq_LeftStickTransfer.y_offset', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -181,34 +226,34 @@ _LEFTSTICK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=180,
-  serialized_end=227,
+  serialized_start=297,
+  serialized_end=361,
 )
 
 
-_LEFTSTICKFEEDBACK = _descriptor.Descriptor(
-  name='LeftStickFeedback',
-  full_name='grpc_client.LeftStickFeedback',
+_STR_SRES_LEFTSTICKTRANSFER = _descriptor.Descriptor(
+  name='str_sres_LeftStickTransfer',
+  full_name='grpc_client.str_sres_LeftStickTransfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='response', full_name='grpc_client.LeftStickFeedback.response', index=0,
+      name='response', full_name='grpc_client.str_sres_LeftStickTransfer.response', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='x_offset_received', full_name='grpc_client.LeftStickFeedback.x_offset_received', index=1,
+      name='x_offset_received', full_name='grpc_client.str_sres_LeftStickTransfer.x_offset_received', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='y_offset_received', full_name='grpc_client.LeftStickFeedback.y_offset_received', index=2,
+      name='y_offset_received', full_name='grpc_client.str_sres_LeftStickTransfer.y_offset_received', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -226,27 +271,27 @@ _LEFTSTICKFEEDBACK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=229,
-  serialized_end=320,
+  serialized_start=363,
+  serialized_end=463,
 )
 
 
-_RIGHTSTICK = _descriptor.Descriptor(
-  name='RightStick',
-  full_name='grpc_client.RightStick',
+_STR_CREQ_RIGHTSTICKTRANSFER = _descriptor.Descriptor(
+  name='str_creq_RightStickTransfer',
+  full_name='grpc_client.str_creq_RightStickTransfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x_offset', full_name='grpc_client.RightStick.x_offset', index=0,
+      name='x_offset', full_name='grpc_client.str_creq_RightStickTransfer.x_offset', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='y_offset', full_name='grpc_client.RightStick.y_offset', index=1,
+      name='y_offset', full_name='grpc_client.str_creq_RightStickTransfer.y_offset', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -264,34 +309,34 @@ _RIGHTSTICK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=322,
-  serialized_end=370,
+  serialized_start=465,
+  serialized_end=530,
 )
 
 
-_RIGHTSTICKFEEDBACK = _descriptor.Descriptor(
-  name='RightStickFeedback',
-  full_name='grpc_client.RightStickFeedback',
+_STR_SRES_RIGHTSTICKTRANSFER = _descriptor.Descriptor(
+  name='str_sres_RightStickTransfer',
+  full_name='grpc_client.str_sres_RightStickTransfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='response', full_name='grpc_client.RightStickFeedback.response', index=0,
+      name='response', full_name='grpc_client.str_sres_RightStickTransfer.response', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='x_offset_received', full_name='grpc_client.RightStickFeedback.x_offset_received', index=1,
+      name='x_offset_received', full_name='grpc_client.str_sres_RightStickTransfer.x_offset_received', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='y_offset_received', full_name='grpc_client.RightStickFeedback.y_offset_received', index=2,
+      name='y_offset_received', full_name='grpc_client.str_sres_RightStickTransfer.y_offset_received', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -309,20 +354,20 @@ _RIGHTSTICKFEEDBACK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=372,
-  serialized_end=464,
+  serialized_start=532,
+  serialized_end=633,
 )
 
 
-_LEFTTRIGGER = _descriptor.Descriptor(
-  name='LeftTrigger',
-  full_name='grpc_client.LeftTrigger',
+_STR_CREQ_LEFTTRIGGERTRANSFER = _descriptor.Descriptor(
+  name='str_creq_LeftTriggerTransfer',
+  full_name='grpc_client.str_creq_LeftTriggerTransfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='z_offset', full_name='grpc_client.LeftTrigger.z_offset', index=0,
+      name='z_offset', full_name='grpc_client.str_creq_LeftTriggerTransfer.z_offset', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -340,27 +385,27 @@ _LEFTTRIGGER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=466,
-  serialized_end=497,
+  serialized_start=635,
+  serialized_end=683,
 )
 
 
-_LEFTTRIGGERFEEDBACK = _descriptor.Descriptor(
-  name='LeftTriggerFeedback',
-  full_name='grpc_client.LeftTriggerFeedback',
+_STR_SRES_LEFTTRIGGERTRANSFER = _descriptor.Descriptor(
+  name='str_sres_LeftTriggerTransfer',
+  full_name='grpc_client.str_sres_LeftTriggerTransfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='response', full_name='grpc_client.LeftTriggerFeedback.response', index=0,
+      name='response', full_name='grpc_client.str_sres_LeftTriggerTransfer.response', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='z_offset_received', full_name='grpc_client.LeftTriggerFeedback.z_offset_received', index=1,
+      name='z_offset_received', full_name='grpc_client.str_sres_LeftTriggerTransfer.z_offset_received', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -378,20 +423,20 @@ _LEFTTRIGGERFEEDBACK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=499,
-  serialized_end=565,
+  serialized_start=685,
+  serialized_end=760,
 )
 
 
-_RIGHTTRIGGER = _descriptor.Descriptor(
-  name='RightTrigger',
-  full_name='grpc_client.RightTrigger',
+_STR_CREQ_RIGHTTRIGGERTRANSFER = _descriptor.Descriptor(
+  name='str_creq_RightTriggerTransfer',
+  full_name='grpc_client.str_creq_RightTriggerTransfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='z_offset', full_name='grpc_client.RightTrigger.z_offset', index=0,
+      name='z_offset', full_name='grpc_client.str_creq_RightTriggerTransfer.z_offset', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -409,27 +454,27 @@ _RIGHTTRIGGER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=567,
-  serialized_end=599,
+  serialized_start=762,
+  serialized_end=811,
 )
 
 
-_RIGHTTRIGGERFEEDBACK = _descriptor.Descriptor(
-  name='RightTriggerFeedback',
-  full_name='grpc_client.RightTriggerFeedback',
+_STR_SRES_RIGHTTRIGGERTRANSFER = _descriptor.Descriptor(
+  name='str_sres_RightTriggerTransfer',
+  full_name='grpc_client.str_sres_RightTriggerTransfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='response', full_name='grpc_client.RightTriggerFeedback.response', index=0,
+      name='response', full_name='grpc_client.str_sres_RightTriggerTransfer.response', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='z_offset_received', full_name='grpc_client.RightTriggerFeedback.z_offset_received', index=1,
+      name='z_offset_received', full_name='grpc_client.str_sres_RightTriggerTransfer.z_offset_received', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -447,177 +492,193 @@ _RIGHTTRIGGERFEEDBACK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=601,
-  serialized_end=668,
+  serialized_start=813,
+  serialized_end=889,
 )
 
-DESCRIPTOR.message_types_by_name['CallRover'] = _CALLROVER
-DESCRIPTOR.message_types_by_name['RoverFeedback'] = _ROVERFEEDBACK
-DESCRIPTOR.message_types_by_name['Button'] = _BUTTON
-DESCRIPTOR.message_types_by_name['ButtonFeedback'] = _BUTTONFEEDBACK
-DESCRIPTOR.message_types_by_name['LeftStick'] = _LEFTSTICK
-DESCRIPTOR.message_types_by_name['LeftStickFeedback'] = _LEFTSTICKFEEDBACK
-DESCRIPTOR.message_types_by_name['RightStick'] = _RIGHTSTICK
-DESCRIPTOR.message_types_by_name['RightStickFeedback'] = _RIGHTSTICKFEEDBACK
-DESCRIPTOR.message_types_by_name['LeftTrigger'] = _LEFTTRIGGER
-DESCRIPTOR.message_types_by_name['LeftTriggerFeedback'] = _LEFTTRIGGERFEEDBACK
-DESCRIPTOR.message_types_by_name['RightTrigger'] = _RIGHTTRIGGER
-DESCRIPTOR.message_types_by_name['RightTriggerFeedback'] = _RIGHTTRIGGERFEEDBACK
+DESCRIPTOR.message_types_by_name['msg_creq_StartConnection'] = _MSG_CREQ_STARTCONNECTION
+DESCRIPTOR.message_types_by_name['msg_sres_StartConnection'] = _MSG_SRES_STARTCONNECTION
+DESCRIPTOR.message_types_by_name['msg_Ping'] = _MSG_PING
+DESCRIPTOR.message_types_by_name['msg_creq_ButtonEventTransfer'] = _MSG_CREQ_BUTTONEVENTTRANSFER
+DESCRIPTOR.message_types_by_name['msg_sres_ButtonEventTransfer'] = _MSG_SRES_BUTTONEVENTTRANSFER
+DESCRIPTOR.message_types_by_name['str_creq_LeftStickTransfer'] = _STR_CREQ_LEFTSTICKTRANSFER
+DESCRIPTOR.message_types_by_name['str_sres_LeftStickTransfer'] = _STR_SRES_LEFTSTICKTRANSFER
+DESCRIPTOR.message_types_by_name['str_creq_RightStickTransfer'] = _STR_CREQ_RIGHTSTICKTRANSFER
+DESCRIPTOR.message_types_by_name['str_sres_RightStickTransfer'] = _STR_SRES_RIGHTSTICKTRANSFER
+DESCRIPTOR.message_types_by_name['str_creq_LeftTriggerTransfer'] = _STR_CREQ_LEFTTRIGGERTRANSFER
+DESCRIPTOR.message_types_by_name['str_sres_LeftTriggerTransfer'] = _STR_SRES_LEFTTRIGGERTRANSFER
+DESCRIPTOR.message_types_by_name['str_creq_RightTriggerTransfer'] = _STR_CREQ_RIGHTTRIGGERTRANSFER
+DESCRIPTOR.message_types_by_name['str_sres_RightTriggerTransfer'] = _STR_SRES_RIGHTTRIGGERTRANSFER
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-CallRover = _reflection.GeneratedProtocolMessageType('CallRover', (_message.Message,), {
-  'DESCRIPTOR' : _CALLROVER,
+msg_creq_StartConnection = _reflection.GeneratedProtocolMessageType('msg_creq_StartConnection', (_message.Message,), {
+  'DESCRIPTOR' : _MSG_CREQ_STARTCONNECTION,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.CallRover)
+  # @@protoc_insertion_point(class_scope:grpc_client.msg_creq_StartConnection)
   })
-_sym_db.RegisterMessage(CallRover)
+_sym_db.RegisterMessage(msg_creq_StartConnection)
 
-RoverFeedback = _reflection.GeneratedProtocolMessageType('RoverFeedback', (_message.Message,), {
-  'DESCRIPTOR' : _ROVERFEEDBACK,
+msg_sres_StartConnection = _reflection.GeneratedProtocolMessageType('msg_sres_StartConnection', (_message.Message,), {
+  'DESCRIPTOR' : _MSG_SRES_STARTCONNECTION,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.RoverFeedback)
+  # @@protoc_insertion_point(class_scope:grpc_client.msg_sres_StartConnection)
   })
-_sym_db.RegisterMessage(RoverFeedback)
+_sym_db.RegisterMessage(msg_sres_StartConnection)
 
-Button = _reflection.GeneratedProtocolMessageType('Button', (_message.Message,), {
-  'DESCRIPTOR' : _BUTTON,
+msg_Ping = _reflection.GeneratedProtocolMessageType('msg_Ping', (_message.Message,), {
+  'DESCRIPTOR' : _MSG_PING,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.Button)
+  # @@protoc_insertion_point(class_scope:grpc_client.msg_Ping)
   })
-_sym_db.RegisterMessage(Button)
+_sym_db.RegisterMessage(msg_Ping)
 
-ButtonFeedback = _reflection.GeneratedProtocolMessageType('ButtonFeedback', (_message.Message,), {
-  'DESCRIPTOR' : _BUTTONFEEDBACK,
+msg_creq_ButtonEventTransfer = _reflection.GeneratedProtocolMessageType('msg_creq_ButtonEventTransfer', (_message.Message,), {
+  'DESCRIPTOR' : _MSG_CREQ_BUTTONEVENTTRANSFER,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.ButtonFeedback)
+  # @@protoc_insertion_point(class_scope:grpc_client.msg_creq_ButtonEventTransfer)
   })
-_sym_db.RegisterMessage(ButtonFeedback)
+_sym_db.RegisterMessage(msg_creq_ButtonEventTransfer)
 
-LeftStick = _reflection.GeneratedProtocolMessageType('LeftStick', (_message.Message,), {
-  'DESCRIPTOR' : _LEFTSTICK,
+msg_sres_ButtonEventTransfer = _reflection.GeneratedProtocolMessageType('msg_sres_ButtonEventTransfer', (_message.Message,), {
+  'DESCRIPTOR' : _MSG_SRES_BUTTONEVENTTRANSFER,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.LeftStick)
+  # @@protoc_insertion_point(class_scope:grpc_client.msg_sres_ButtonEventTransfer)
   })
-_sym_db.RegisterMessage(LeftStick)
+_sym_db.RegisterMessage(msg_sres_ButtonEventTransfer)
 
-LeftStickFeedback = _reflection.GeneratedProtocolMessageType('LeftStickFeedback', (_message.Message,), {
-  'DESCRIPTOR' : _LEFTSTICKFEEDBACK,
+str_creq_LeftStickTransfer = _reflection.GeneratedProtocolMessageType('str_creq_LeftStickTransfer', (_message.Message,), {
+  'DESCRIPTOR' : _STR_CREQ_LEFTSTICKTRANSFER,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.LeftStickFeedback)
+  # @@protoc_insertion_point(class_scope:grpc_client.str_creq_LeftStickTransfer)
   })
-_sym_db.RegisterMessage(LeftStickFeedback)
+_sym_db.RegisterMessage(str_creq_LeftStickTransfer)
 
-RightStick = _reflection.GeneratedProtocolMessageType('RightStick', (_message.Message,), {
-  'DESCRIPTOR' : _RIGHTSTICK,
+str_sres_LeftStickTransfer = _reflection.GeneratedProtocolMessageType('str_sres_LeftStickTransfer', (_message.Message,), {
+  'DESCRIPTOR' : _STR_SRES_LEFTSTICKTRANSFER,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.RightStick)
+  # @@protoc_insertion_point(class_scope:grpc_client.str_sres_LeftStickTransfer)
   })
-_sym_db.RegisterMessage(RightStick)
+_sym_db.RegisterMessage(str_sres_LeftStickTransfer)
 
-RightStickFeedback = _reflection.GeneratedProtocolMessageType('RightStickFeedback', (_message.Message,), {
-  'DESCRIPTOR' : _RIGHTSTICKFEEDBACK,
+str_creq_RightStickTransfer = _reflection.GeneratedProtocolMessageType('str_creq_RightStickTransfer', (_message.Message,), {
+  'DESCRIPTOR' : _STR_CREQ_RIGHTSTICKTRANSFER,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.RightStickFeedback)
+  # @@protoc_insertion_point(class_scope:grpc_client.str_creq_RightStickTransfer)
   })
-_sym_db.RegisterMessage(RightStickFeedback)
+_sym_db.RegisterMessage(str_creq_RightStickTransfer)
 
-LeftTrigger = _reflection.GeneratedProtocolMessageType('LeftTrigger', (_message.Message,), {
-  'DESCRIPTOR' : _LEFTTRIGGER,
+str_sres_RightStickTransfer = _reflection.GeneratedProtocolMessageType('str_sres_RightStickTransfer', (_message.Message,), {
+  'DESCRIPTOR' : _STR_SRES_RIGHTSTICKTRANSFER,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.LeftTrigger)
+  # @@protoc_insertion_point(class_scope:grpc_client.str_sres_RightStickTransfer)
   })
-_sym_db.RegisterMessage(LeftTrigger)
+_sym_db.RegisterMessage(str_sres_RightStickTransfer)
 
-LeftTriggerFeedback = _reflection.GeneratedProtocolMessageType('LeftTriggerFeedback', (_message.Message,), {
-  'DESCRIPTOR' : _LEFTTRIGGERFEEDBACK,
+str_creq_LeftTriggerTransfer = _reflection.GeneratedProtocolMessageType('str_creq_LeftTriggerTransfer', (_message.Message,), {
+  'DESCRIPTOR' : _STR_CREQ_LEFTTRIGGERTRANSFER,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.LeftTriggerFeedback)
+  # @@protoc_insertion_point(class_scope:grpc_client.str_creq_LeftTriggerTransfer)
   })
-_sym_db.RegisterMessage(LeftTriggerFeedback)
+_sym_db.RegisterMessage(str_creq_LeftTriggerTransfer)
 
-RightTrigger = _reflection.GeneratedProtocolMessageType('RightTrigger', (_message.Message,), {
-  'DESCRIPTOR' : _RIGHTTRIGGER,
+str_sres_LeftTriggerTransfer = _reflection.GeneratedProtocolMessageType('str_sres_LeftTriggerTransfer', (_message.Message,), {
+  'DESCRIPTOR' : _STR_SRES_LEFTTRIGGERTRANSFER,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.RightTrigger)
+  # @@protoc_insertion_point(class_scope:grpc_client.str_sres_LeftTriggerTransfer)
   })
-_sym_db.RegisterMessage(RightTrigger)
+_sym_db.RegisterMessage(str_sres_LeftTriggerTransfer)
 
-RightTriggerFeedback = _reflection.GeneratedProtocolMessageType('RightTriggerFeedback', (_message.Message,), {
-  'DESCRIPTOR' : _RIGHTTRIGGERFEEDBACK,
+str_creq_RightTriggerTransfer = _reflection.GeneratedProtocolMessageType('str_creq_RightTriggerTransfer', (_message.Message,), {
+  'DESCRIPTOR' : _STR_CREQ_RIGHTTRIGGERTRANSFER,
   '__module__' : 'gamepad_pb2'
-  # @@protoc_insertion_point(class_scope:grpc_client.RightTriggerFeedback)
+  # @@protoc_insertion_point(class_scope:grpc_client.str_creq_RightTriggerTransfer)
   })
-_sym_db.RegisterMessage(RightTriggerFeedback)
+_sym_db.RegisterMessage(str_creq_RightTriggerTransfer)
+
+str_sres_RightTriggerTransfer = _reflection.GeneratedProtocolMessageType('str_sres_RightTriggerTransfer', (_message.Message,), {
+  'DESCRIPTOR' : _STR_SRES_RIGHTTRIGGERTRANSFER,
+  '__module__' : 'gamepad_pb2'
+  # @@protoc_insertion_point(class_scope:grpc_client.str_sres_RightTriggerTransfer)
+  })
+_sym_db.RegisterMessage(str_sres_RightTriggerTransfer)
 
 
-DESCRIPTOR._options = None
 
-_GAMEPADEVENTS = _descriptor.ServiceDescriptor(
-  name='GamepadEvents',
-  full_name='grpc_client.GamepadEvents',
+_GAMEPAD = _descriptor.ServiceDescriptor(
+  name='Gamepad',
+  full_name='grpc_client.Gamepad',
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=671,
-  serialized_end=1138,
+  serialized_start=892,
+  serialized_end=1585,
   methods=[
   _descriptor.MethodDescriptor(
     name='InitService',
-    full_name='grpc_client.GamepadEvents.InitService',
+    full_name='grpc_client.Gamepad.InitService',
     index=0,
     containing_service=None,
-    input_type=_CALLROVER,
-    output_type=_ROVERFEEDBACK,
+    input_type=_MSG_CREQ_STARTCONNECTION,
+    output_type=_MSG_SRES_STARTCONNECTION,
+    serialized_options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='TestConnection',
+    full_name='grpc_client.Gamepad.TestConnection',
+    index=1,
+    containing_service=None,
+    input_type=_MSG_PING,
+    output_type=_MSG_PING,
     serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
     name='ButtonEvent',
-    full_name='grpc_client.GamepadEvents.ButtonEvent',
-    index=1,
+    full_name='grpc_client.Gamepad.ButtonEvent',
+    index=2,
     containing_service=None,
-    input_type=_BUTTON,
-    output_type=_BUTTONFEEDBACK,
+    input_type=_MSG_CREQ_BUTTONEVENTTRANSFER,
+    output_type=_MSG_SRES_BUTTONEVENTTRANSFER,
     serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
     name='TransmitLS',
-    full_name='grpc_client.GamepadEvents.TransmitLS',
-    index=2,
+    full_name='grpc_client.Gamepad.TransmitLS',
+    index=3,
     containing_service=None,
-    input_type=_LEFTSTICK,
-    output_type=_LEFTSTICKFEEDBACK,
+    input_type=_STR_CREQ_LEFTSTICKTRANSFER,
+    output_type=_STR_SRES_LEFTSTICKTRANSFER,
     serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
     name='TransmitRS',
-    full_name='grpc_client.GamepadEvents.TransmitRS',
-    index=3,
+    full_name='grpc_client.Gamepad.TransmitRS',
+    index=4,
     containing_service=None,
-    input_type=_RIGHTSTICK,
-    output_type=_RIGHTSTICKFEEDBACK,
+    input_type=_STR_CREQ_RIGHTSTICKTRANSFER,
+    output_type=_STR_SRES_RIGHTSTICKTRANSFER,
     serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
     name='TransmitLT',
-    full_name='grpc_client.GamepadEvents.TransmitLT',
-    index=4,
+    full_name='grpc_client.Gamepad.TransmitLT',
+    index=5,
     containing_service=None,
-    input_type=_LEFTTRIGGER,
-    output_type=_LEFTTRIGGERFEEDBACK,
+    input_type=_STR_CREQ_LEFTTRIGGERTRANSFER,
+    output_type=_STR_SRES_LEFTTRIGGERTRANSFER,
     serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
     name='TransmitRT',
-    full_name='grpc_client.GamepadEvents.TransmitRT',
-    index=5,
+    full_name='grpc_client.Gamepad.TransmitRT',
+    index=6,
     containing_service=None,
-    input_type=_RIGHTTRIGGER,
-    output_type=_RIGHTTRIGGERFEEDBACK,
+    input_type=_STR_CREQ_RIGHTTRIGGERTRANSFER,
+    output_type=_STR_SRES_RIGHTTRIGGERTRANSFER,
     serialized_options=None,
   ),
 ])
-_sym_db.RegisterServiceDescriptor(_GAMEPADEVENTS)
+_sym_db.RegisterServiceDescriptor(_GAMEPAD)
 
-DESCRIPTOR.services_by_name['GamepadEvents'] = _GAMEPADEVENTS
+DESCRIPTOR.services_by_name['Gamepad'] = _GAMEPAD
 
 # @@protoc_insertion_point(module_scope)
